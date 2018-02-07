@@ -127,6 +127,8 @@ public class MainActivity extends Activity {
 	public boolean onOptionsItemSelected(MenuItem item) {
 		switch (item.getItemId()) {
 			case R.id.preferences: {
+				Intent prefIntent = new Intent(this, AppPreferences.class);
+				startActivity(prefIntent);
 				break;
 			}
 		}
