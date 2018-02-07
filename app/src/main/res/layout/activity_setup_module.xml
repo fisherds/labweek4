@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <EditText
+        android:id="@+id/moduleName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:ems="10"
+        android:hint="@string/moduleHint" >
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/moduleCode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/moduleName"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="21dp"
+        android:ems="10"
+        android:hint="@string/codeHint" />
+
+    <TextView
+        android:id="@+id/timeTag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/moduleCode"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="4dp"
+        android:text="@string/time"
+        android:textSize="8pt"
+        android:layout_marginBottom="24dp" />
+
+    <TextView
+        android:id="@+id/startTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/moduleCode"
+        android:layout_toRightOf="@id/timeTag"
+        android:textSize="8pt"
+        android:layout_marginBottom="24dp"/>
+
+    <TextView
+        android:id="@+id/timeeDiv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/startTime"
+        android:layout_alignBottom="@id/startTime"
+        android:textSize="8pt"
+        android:text=" - "/>
+
+    <TextView
+        android:id="@+id/endTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/timeeDiv"
+        android:textSize="8pt"
+        android:layout_alignBottom="@id/startTime"/>
+
+    <Spinner
+        android:id="@+id/daySpinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/typeSpinner"
+        android:layout_below="@id/startTime"/>
+
+    <TextView
+        android:id="@+id/dayTag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:text="@string/day"
+        android:textSize="8pt"
+        android:layout_marginLeft="4dp"
+        android:layout_alignBottom="@id/daySpinner"/>
+
+
+
+    <TextView
+        android:id="@+id/typeTag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:text="@string/type"
+        android:textSize="8pt"
+        android:layout_marginLeft="4dp"
+        android:layout_alignBottom="@id/typeSpinner"/>
+
+
+    <Spinner
+        android:id="@id/typeSpinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/typeTag"
+        android:layout_below="@id/daySpinner"
+        android:layout_marginLeft="10dp"/>
+
+    <Button
+        android:id="@+id/commitButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/typeSpinner"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentRight="true"
+        android:text="@string/save" />
+
+    <Button
+        android:id="@+id/addSlotButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/commitButton"
+        android:layout_alignBottom="@+id/commitButton"
+        android:layout_alignParentLeft="true"
+        android:text="@string/add_slot" />
+    <ScrollView
+        android:layout_below="@id/commitButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+    <TextView
+        android:id="@+id/scheduleView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="20dp"/>
+
+    </ScrollView>
+
+
+</RelativeLayout>
+
+    
