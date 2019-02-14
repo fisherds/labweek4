@@ -1,7 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="ie.ul.shuhupdaphone"
-    android:versionCode="1"
-    android:versionName="1.0" >
+          package="ie.ul.shuhupdaphone"
+          android:versionCode="1"
+          android:versionName="1.0">
 
     <application
         android:icon="@drawable/ic_launcher"
@@ -9,29 +10,32 @@
         android:theme="@android:style/Theme.DeviceDefault.Light">
         <activity
             android:name=".gui.MainActivity"
-            android:label="@string/title_activity_main" >
+            android:label="@string/title_activity_main">
             <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.LAUNCHER" />
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
-         <activity
+        <activity
             android:name=".gui.SetupModuleActivity"
-            android:label="@string/title_activity_setup_module" >
-         </activity>
-         <activity
+            android:label="@string/title_activity_setup_module">
+        </activity>
+        <activity
             android:name=".gui.AddFullScheduleActivity"
-            android:label="@string/title_activity_add_fullschedule" >
-         </activity>
-         <activity
+            android:label="@string/title_activity_add_fullschedule">
+        </activity>
+        <activity
             android:name=".gui.ViewScheduleActivity"
-            android:label="@string/title_activity_view_schedule" >
-         </activity>
-         <activity
+            android:label="@string/title_activity_view_schedule">
+        </activity>
+        <activity
             android:name=".gui.AppPreferences"
-            android:label="@string/preferences" >
-         </activity>
-         
+            android:label="@string/preferences">
+        </activity>
+        <activity android:name=".gui.InformationActivity"
+                  android:label="@string/information">
+        </activity>
     </application>
 
 </manifest>

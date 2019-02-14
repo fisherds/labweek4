@@ -7,7 +7,7 @@
     <string name="title_activity_setup_module">Setup a New Module</string>
     <string name="title_activity_add_fullschedule">Add all module slots to schedule</string>
     <string name="title_activity_view_schedule">View Your Schedules</string>
-    
+
     <string name="addNewModule">Setup Module</string>
     <string name="addNewLecture">Add Lecture slot</string>
     <string name="addNewLab">Add Lab slot</string>
@@ -23,6 +23,6 @@
     <string name="time">Time:</string>
     <string name="type">Type:</string>
     <string name="day">Day:</string>
-    
+
 
 </resources>

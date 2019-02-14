@@ -115,11 +115,14 @@ public class MainActivity extends Activity {
   @Override
   public boolean onOptionsItemSelected(MenuItem item) {
     switch (item.getItemId()) {
-      case R.id.preferences: {
+      case R.id.preferences:
         Intent prefIntent = new Intent(this, AppPreferences.class);
         startActivity(prefIntent);
         break;
-      }
+      case R.id.information:
+        Intent infoIntent = new Intent(this, InformationActivity.class);
+        startActivity(infoIntent);
+        break;
     }
     return super.onOptionsItemSelected(item);
   }
